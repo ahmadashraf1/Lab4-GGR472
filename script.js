@@ -27,7 +27,7 @@ Step 2: VIEW GEOJSON POINT DATA ON MAP
 let colgeojson;
 
 // Fetch GeoJSON from URL and store response
-fetch('https://raw.githubusercontent.com/ahmadashraf1/GGR472-Lab4/main/pedcyc_collision_06-21.geojson')
+fetch('https://raw.githubusercontent.com/ahmadashraf1/Lab4-GGR472/main/pedcyc_collision_06-21.geojson')
     .then(response => response.json())
     .then(response => {
         // console.log(response); // Check response in console
