@@ -1,0 +1,65 @@
+/* Style for the map heading */
+.map-heading {
+    background-color: #ffffff; 
+    color: #000000;
+    padding: 0px 10px; 
+    display: inline-block; /* Makes the background only as wide as the text */
+    position: relative; 
+    z-index: 10; /* Above the map */
+    left: 5px; 
+    top: 5px; 
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; /* Sets the font to Arial, with sans-serif as a fallback */
+    font-size: 0.6em;
+    line-height: 0.3; /* Reduces the font size; adjust as needed */
+  }
+
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1
+}
+
+
+.legend {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 0px 10px 10px 10px;
+    right: 10px;
+    z-index: 5;
+}
+
+.gradient-box {
+    width:200px;
+    height: 15px;
+    background: linear-gradient(to right, #f7fbff, #deebf7, #c6dbef, #9ecae1, #6baed6, #4292c6, #2171b5, #08519c, #08306b);
+    margin-bottom: 10px;
+    border: 1px solid #08306b;
+  }
+
+  .minlabel {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: -2px;
+    left: 10px;
+    padding:2px;
+  }
+  
+  .maxlabel {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: -2px;
+    right: 10px;
+    padding:2px;
+
+  }
+

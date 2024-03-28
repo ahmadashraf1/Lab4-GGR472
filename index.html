@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472 Lab 4</title>
+    <!-- mapbox API -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Turf.js -->
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <!-- ELEMENTS  CONTAINER -->
+    <div class="map-heading">
+        <h1>Hexgrid Web Map of Traffic Collisions in Toronto Involving Pedestrians and Cyclists</h1>
+    </div>
+
+    <div id="legend" class="legend">
+        <h3>Number of Collisions</h3>
+        <div class="gradient-box"></div>
+        <span class="minlabel"></span>
+        <span class="maxlabel"></span>
+    </div>
+
+    <div class='map-overlay'>
+        <button type="button" class="btn btn-primary btn-sm" id="bboxbutton">Bounding box</button>
+    </div>
+
+    <!-- MAP CONTAINER -->
+    <div id='map' class='map'></div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
